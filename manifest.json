@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Quilo: Web Modloader",
+    "version": "1.0.0",
+    "description": "This is an extension that allows you to inject custom scripts into webpages (modding)! You can browse and download mods from the Marketplace, run the mods in a webpage, and create and publish mods yourself!",
+    "icons": {
+        "48": "img/logo48.png",
+        "128": "img/logo128.png"
+    },
+    "action": {
+        "default_popup": "home.html"
+    }
+}

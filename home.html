@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="bar">
+        <h1 class="title">Quill</h1>
+        <button>Marketplace</button>
+        <button>Sign In-Create</button>
+        <button>Installed Mods</button>
+    </div>
+
+    <div class="mods">
+    <h1 class="modtitle">Your Mods</h1>
+    <div class="modsection">
+        <img class="modlogo" src="img/none.png">
+        <h2 class="modname">ModName</h4>
+        <p class="desc">Description</p>
+        <button>View</button>
+        <button>Run</button>
+    </div>
+    </div>
+</body>
+</html>
+
+<style>
+    *{
+        font-family: sans-serif;
+    }
+
+    body {background-color: black;}
+
+    button {
+        cursor: pointer;
+        transition-duration: 0.3s;
+        border-radius: 6px;
+        border: 0;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    button:hover {
+        font-size: 110%;
+    }
+
+    .bar {
+        background-color: rgb(45, 192, 0);
+        border-radius: 7px;
+        padding: 4px;
+        margin: 4px;
+        width: 100%;
+    }
+
+    .title {
+        color: rgb(11, 4, 231);
+    }
+
+    .modtitle {
+        color: white;
+    }
+
+    .modsection {
+        background-color: rgb(35, 35, 35);
+        border-radius: 5px;
+        padding: 4px;
+        margin: 4px;
+    }
+
+    .modlogo {
+        width: 45px;
+        height: 45px;
+        border-radius: 5px;
+    }
+
+    .modname {
+        color: white;
+    }
+
+    .desc {
+        color: white;;
+    }
+
+</style>
