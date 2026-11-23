@@ -7,7 +7,10 @@
 </head>
 <body>
     <div class="bar">
+        <div class="titles">
+        <img class="logo" src="img/logo128.png">
         <h1 class="title">Quill</h1>
+        </div>
         <button>Marketplace</button>
         <button>Sign In-Create</button>
         <button>Installed Mods</button>
@@ -15,12 +18,15 @@
 
     <div class="mods">
     <h1 class="modtitle">Your Mods</h1>
-    <div class="modsection">
+    <div class="modsection" id="modsection">
+        <div class="mtitles">
         <img class="modlogo" src="img/none.png">
-        <h2 class="modname">ModName</h4>
+        <h2 class="modname" id="modname">ModName</h2>
+        </div>
         <p class="desc">Description</p>
         <button>View</button>
         <button>Run</button>
+    </div>
     </div>
     </div>
 </body>
@@ -30,6 +36,8 @@
     *{
         font-family: sans-serif;
     }
+
+    html{width: 800px; height: 600px;}
 
     body {background-color: black;}
 
@@ -42,9 +50,7 @@
         margin: 4px;
     }
 
-    button:hover {
-        font-size: 110%;
-    }
+    button:hover {font-size: 110%;}
 
     .bar {
         background-color: rgb(45, 192, 0);
@@ -55,7 +61,12 @@
     }
 
     .title {
-        color: rgb(11, 4, 231);
+        color: rgb(4, 95, 231);
+        position: relative;
+        bottom: 35px;
+        left: 10px;
+        font-family: "Firjar";
+        font-size: 45px;
     }
 
     .modtitle {
@@ -69,18 +80,36 @@
         margin: 4px;
     }
 
-    .modlogo {
+    .logo {
         width: 45px;
         height: 45px;
         border-radius: 5px;
     }
 
+    .modlogo{
+        width: 35px;
+        height: 35px;
+        border-radius: 5px;
+    }
+
     .modname {
         color: white;
+        position: relative;
+        left: 10px;
+        bottom: 12px;
+
     }
 
     .desc {
         color: white;;
     }
 
+    .mtitles,.titles{display: flex;}
+
 </style>
+
+<script src="script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Firjar:wght@100..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
