@@ -9,5 +9,8 @@
     },
     "action": {
         "default_popup": "home.html"
-    }
+    },
+    "permissions": [
+        "storage"
+    ]
 }
